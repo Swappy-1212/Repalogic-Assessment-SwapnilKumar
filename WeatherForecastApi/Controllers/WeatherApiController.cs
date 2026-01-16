@@ -4,7 +4,6 @@ using WeatherForecastApi.Services;
 namespace WeatherForecastApi.Controllers
 {
     [ApiController]
-    [Route("api/weather")]
     public class WeatherApiController : ControllerBase
     {
         private readonly IWeatherService _weatherService;
