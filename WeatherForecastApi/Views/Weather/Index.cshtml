@@ -1,0 +1,36 @@
+﻿@model IEnumerable<WeatherForecast>
+
+<h2>Weather Forecast</h2>
+
+<form method="get">
+    <label>Select City:</label>
+    <select name="city" onchange="this.form.submit()">
+        @foreach (var city in new[] { "London", "Paris", "New York", "Tokyo", "Sydney", "Berlin", "Toronto", "Dubai" })
+        {
+            <option value="@city" selected="@(ViewBag.City == city)">
+                @city
+            </option>
+        }
+    </select>
+
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Temperature (°C)</th>
+            <th>Summary</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Date.ToShortDateString()</td>
+                <td>@item.Temperature</td>
+                <td>@item.Summary</td>
+            </tr>
+        }
+    </tbody>
+</table>

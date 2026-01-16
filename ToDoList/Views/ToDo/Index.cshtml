@@ -1,0 +1,37 @@
+﻿@model IEnumerable<ToDoList.Models.TodoItem>
+
+<h2>To-Do List</h2>
+
+<form asp-action="Create" method="post">
+    <input type="text" name="title" placeholder="New to-do..." required />
+    <button type="submit">Add</button>
+</form>
+
+<p>
+    Filter:
+    <a asp-action="Index" asp-route-filter="all">All</a> |
+    <a asp-action="Index" asp-route-filter="pending">Pending</a> |
+    <a asp-action="Index" asp-route-filter="completed">Completed</a>
+</p>
+
+<table>
+    <tr>
+        <th>Task</th>
+        <th>Status</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@(item.IsCompleted ? "Completed" : "Pending")</td>
+            <td>
+                <a asp-action="ToggleComplete" asp-route-id="@item.Id">
+                    @(item.IsCompleted ? "Undo" : "Complete")
+                </a> |
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,38 @@
+﻿@model TicTacToeGame.Models.GameState
+
+<h2>Tic Tac Toe</h2>
+
+<p>
+    <a asp-action="Index" asp-route-vsComputer="false">Two Players</a> |
+    <a asp-action="Index" asp-route-vsComputer="true">Vs Computer</a> |
+    <a asp-action="Reset">Reset</a>
+</p>
+
+<table style="border-collapse: collapse;">
+@for (int i = 0; i < 9; i += 3)
+{
+    <tr>
+        @for (int j = 0; j < 3; j++)
+        {
+            int index = i + j;
+            <td style="width:60px;height:60px;border:1px solid black;text-align:center;font-size:24px;">
+                @if (string.IsNullOrEmpty(Model.Board[index]) && Model.Winner == null)
+                {
+                    <a asp-action="Move" asp-route-index="@index">-</a>
+                }
+                else
+                {
+                    @Model.Board[index]
+                }
+            </td>
+        }
+    </tr>
+}
+</table>
+
+@if (Model.Winner != null)
+{
+    <h3>
+        @(Model.Winner == "Draw" ? "It's a Draw!" : $"Winner: {Model.Winner}")
+    </h3>
+}

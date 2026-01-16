@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecastApi", "WeatherForecastApi\WeatherForecastApi.csproj", "{53248E34-A7AC-4C62-A1C6-52CEB349ED42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecastApi", "WeatherForecastApi\WeatherForecastApi.csproj", "{53248E34-A7AC-4C62-A1C6-52CEB349ED42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList", "ToDoList\ToDoList.csproj", "{829E27B9-6451-42E6-B4EA-92EE1CAB12A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToeGame", "TicTacToeGame\TicTacToeGame.csproj", "{6DD8618C-1109-4F14-88B7-876272A5871D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductApp", "ProductApp\ProductApp.csproj", "{0081B742-278F-4C8E-8729-BF4C33A084C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{53248E34-A7AC-4C62-A1C6-52CEB349ED42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53248E34-A7AC-4C62-A1C6-52CEB349ED42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53248E34-A7AC-4C62-A1C6-52CEB349ED42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{829E27B9-6451-42E6-B4EA-92EE1CAB12A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829E27B9-6451-42E6-B4EA-92EE1CAB12A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829E27B9-6451-42E6-B4EA-92EE1CAB12A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829E27B9-6451-42E6-B4EA-92EE1CAB12A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD8618C-1109-4F14-88B7-876272A5871D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD8618C-1109-4F14-88B7-876272A5871D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD8618C-1109-4F14-88B7-876272A5871D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD8618C-1109-4F14-88B7-876272A5871D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0081B742-278F-4C8E-8729-BF4C33A084C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0081B742-278F-4C8E-8729-BF4C33A084C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0081B742-278F-4C8E-8729-BF4C33A084C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0081B742-278F-4C8E-8729-BF4C33A084C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

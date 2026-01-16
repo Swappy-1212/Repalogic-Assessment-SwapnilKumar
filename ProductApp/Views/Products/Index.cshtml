@@ -1,0 +1,15 @@
+﻿@model IEnumerable<ProductApp.Models.Product>
+
+<h2>Products</h2>
+
+<ul style="list-style:none;padding:0;">
+    @foreach (var product in Model)
+    {
+        <li style="margin-bottom:20px;border-bottom:1px solid #ccc;padding:10px;">
+            <img src="@product.ImageUrl" width="100" />
+            <h3>@product.Title</h3>
+            <p>Price: ₹@product.Price</p>
+            <a asp-action="Details" asp-route-id="@product.Id">View Details</a>
+        </li>
+    }
+</ul>

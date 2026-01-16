@@ -1,0 +1,10 @@
+﻿@model ProductApp.Models.Product
+
+<h2>@Model.Title</h2>
+
+<img src="@Model.ImageUrl" width="200" />
+
+<p><strong>Price:</strong> ₹@Model.Price</p>
+<p>@Model.Description</p>
+
+<a asp-action="Index">Back to Products</a>

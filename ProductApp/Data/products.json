@@ -1,0 +1,23 @@
+[
+  {
+    "Id": 1,
+    "Title": "Wireless Headphones",
+    "Price": "3,999",
+    "ImageUrl": "https://www.leafstudios.in/cdn/shop/files/1_a43c5e0b-3a47-497d-acec-b4764259b10e_1000x.png?v=1750486829",
+    "Description": "High quality wireless headphones with noise cancellation."
+  },
+  {
+    "Id": 2,
+    "Title": "Smart Watch",
+    "Price": "40,000",
+    "ImageUrl": "https://rukminim2.flixcart.com/image/480/640/xif0q/smartwatch/n/a/z/-original-imah4jm98qgzfymk.jpeg?q=90",
+    "Description": "Smart watch with fitness tracking and notifications."
+  },
+  {
+    "Id": 3,
+    "Title": "Gaming Mouse",
+    "Price": "5,000",
+    "ImageUrl": "https://m.media-amazon.com/images/I/61AcT0ZuO3L.jpg",
+    "Description": "Ergonomic gaming mouse with RGB lighting."
+  }
+]
